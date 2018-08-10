@@ -1,10 +1,10 @@
-#一、Android 消息总线简介
+# 一、Android 消息总线简介
 
 关于 `Android` 消息传递方式比较多，一般的系统原生实现方式比如 `Handler` 、自定义广播、接口回调，以及三方工具 `EventBus` 、`RxBus` 等，但是以上工具或多或少都有些缺点。偶然发现美团技术点评团队的一个消息通信工具，本文进行使用方式的简单介绍。
 
 具体介绍参考原文：[Android消息总线的演进之路：用LiveDataBus替代RxBus、EventBus](https://tech.meituan.com/Android_LiveDataBus.html) 
 
-#二、推荐理由
+# 二、推荐理由
 
 肯定会有小伙伴问，既然有了成熟的 `EventBus` ，为什么要使用这个框架呢？我个人观点当前工具依赖于 `Android Architecture Components` 提出的框架 `LiveData` ，侵入性更小，依赖简单，使用方便，因此比较倾向使用此框架。
 
